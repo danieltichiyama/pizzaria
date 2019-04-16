@@ -1,43 +1,61 @@
+header{
+    border: 2px dotted blue;
+}
+
+div {
+    border: 1px dashed black;
+}
+
+section {
+    border: 2px dotted red;
+}
+
+footer {
+    border: 2px dotted blue;
+}
+
 .imgBox {
-    background: 
+    
+    background:
     linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
-    url(https://galvestonislandguide.com/wp-content/uploads/2018/06/pizza.jpeg);
-    background-size: cover;
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),url(https://galvestonislandguide.com/wp-content/uploads/2018/06/pizza.jpeg);
     width: 99vw;
     height: 99vh;
-    margin: 0px 0 0 0px;
+    background-size: cover;
     position: relative;
 }
 
+/* Relative position is a kind of default (besides static) that keeps the element in line with the rest of the document, while absolute will take the element out of the document (usually placing it on top). This lifted element will conform to the first parent element it finds with relative positioning invoked. */
+
 .imgBox h1 {
-        font-family: 'Encode Sans Semi Expanded', sans-serif;
-        color: white;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-size: 10rem;
-        text-align: center;
-        text-shadow: 20px;
-        transform: translate(-50%, -50%);
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    color: white;
+    position:absolute;
+    font-size: 10em;
+    text-align: center;
 }
 
 .imgBox h2 {
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     color: white;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position:relative;
     font-size: 2rem;
     text-align: center;
-    text-shadow: 10px;
-    transform: translate(-50%, 650%);
+    transform: translate(0,1500%);
 }
 
-#intro {
-    border-bottom: 10px black solid;
+#topMenu{
+display: flexbox;
+justify-content: space-between;
+}
+
+.guide {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    background-color: orange;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    display: inline-flexbox;
 }
