@@ -1,0 +1,11 @@
+.imgBox {
+    width: 80vw;
+    height: 80vh;
+}
+
+.heroimg {
+    max-width:100%;
+    height: auto;
+    max-height: 100%;
+    z-index: -1;
+}
