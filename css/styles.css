@@ -36,7 +36,7 @@ footer {
 /* Relative position is a kind of default (besides static) that keeps the element in line with the rest of the document, while absolute will take the element out of the document (usually placing it on top). This lifted element will conform to the first parent element it finds with relative positioning invoked. */
 
 .imgBox h1 {
-    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     color: white;
     position:absolute;
     font-size: 10em;
@@ -44,7 +44,7 @@ footer {
 }
 
 .imgBox h2 {
-    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     color: white;
     position:relative;
     font-size: 2rem;
@@ -62,7 +62,7 @@ footer {
 }
 
 .guide {
-    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     text-align: center;
     padding: 25px;
     font-size: 1em;
@@ -82,4 +82,29 @@ footer {
     height:5vw;
     bottom: 2%;
     left:50%;
+}
+
+.sectionTitle {
+    font-family: 'Kristi', cursive;
+    font-size:3em;
+}
+
+.content {
+    position:relative;
+}
+
+#today {
+    color:var(--temptress);
+}
+
+.specialImg {
+    position:absolute;
+    width: 300px;
+    height: auto;
+    right: 50px;
+    top: 5px;
+}
+
+.pizza {
+    
 }
