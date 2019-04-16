@@ -6,6 +6,7 @@
 
 header{
     border: 2px dotted blue;
+    width:100vw;
 }
 
 div {
@@ -14,10 +15,13 @@ div {
 
 section {
     border: 2px dotted red;
+    width:100vw;
+    padding-bottom: 2em;
 }
 
 footer {
     border: 2px dotted blue;
+    width:100vw;
 }
 
 .imgBox {
@@ -87,44 +91,78 @@ footer {
 .sectionTitle {
     font-family: 'Kristi', cursive;
     font-size:3em;
-}
-
-.content {
-    position:relative;
+    margin-top:2px;
 }
 
 #today {
     color:var(--temptress);
 }
 
+.content {
+    position: relative;
+    width:100vw;
+}
+
+#special{
+    font-size:5em;
+    margin-bottom:10px;
+}
+
+.specialPrice {
+    font-size:3em;
+    margin-top:1px;
+}
+
+#specialss {
+    position: absolute;
+    right:0px;
+    top:0;
+    width:50vw;
+    height:100%;
+
+}
 .specialImg {
-    position:absolute;
-    width: 300px;
-    height: auto;
-    right: 50px;
-    top: 5px;
-    overflow:hidden;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .pizza {
-    background-color:green;
-    height:400px;
+    background-color:var(--curious-blue);
+    height:auto;
+    min-height: 400px;
     width: 15vw;
     flex-direction: row;
     margin:10px;
     padding:5px;
+    color:var(--temptress);
+    border:none;
+    position:relative;
+    box-shadow:git 
+    
 
 }
-
+#menu {
+    background-color: #2982ae;
+}
 #menuContainer {
     display:flex;
     justify-content: space-around;
+
 }
 
 .imgContainer {
     width:99%;
     height:200px;
+    border:none;
 }
+
+.price {
+    position:absolute;
+    bottom:2px;
+}
+
+/* Making price absolute and pizza relative makes it so that the description bleeds into the price when the browser window is horizontally shrunk */
 
 .pizzaPic {
     width:100%;
