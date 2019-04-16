@@ -1,3 +1,9 @@
+:root {
+    --curious-blue: #3399CC;
+    --rodeo-dust:#CDB99C;
+    --temptress: #330000;
+}
+
 header{
     border: 2px dotted blue;
 }
@@ -15,16 +21,16 @@ footer {
 }
 
 .imgBox {
-    
     background:
     linear-gradient(
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
       ),url(https://galvestonislandguide.com/wp-content/uploads/2018/06/pizza.jpeg);
-    width: 99vw;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     position: relative;
+    margin: 0px;
 }
 
 /* Relative position is a kind of default (besides static) that keeps the element in line with the rest of the document, while absolute will take the element out of the document (usually placing it on top). This lifted element will conform to the first parent element it finds with relative positioning invoked. */
@@ -46,16 +52,34 @@ footer {
     transform: translate(0,1500%);
 }
 
-#topMenu{
-display: flexbox;
-justify-content: space-between;
+#topMenu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style:none;
+    background-color: var(--rodeo-dust);
+    width: 100vw;
 }
 
 .guide {
     font-family: 'Encode Sans Semi Expanded', sans-serif;
-    background-color: orange;
-    padding: 25px;
-    margin: 25px;
     text-align: center;
-    display: inline-flexbox;
+    padding: 25px;
+    font-size: 1em;
+
+}
+
+.guide a {
+    color:white;
+    text-decoration-line: none;
+}
+
+.scrollDown {
+    position: absolute;
+    opacity: .5;
+    filter:alpha(opacity=x);
+    width:5vw;
+    height:5vw;
+    bottom: 2%;
+    left:50%;
 }
