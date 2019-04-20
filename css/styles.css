@@ -132,17 +132,42 @@ footer {
 #today {
     color:var(--temptress);
     background-color: white;
-    background:linear-gradient(
+    /* background:linear-gradient(
         rgba(255,255,255,0.3),
         rgba(255,255,255,0.3)
         ),url(http://www.treatsandeatsblog.com/wp-content/uploads/2015/02/kimchi-pizza-treats-and-eats-2.jpg) right center no-repeat;
-    background-size: 50vw;
+    background-size: 50vw; */
     margin: 0;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+#specialContainer {
+    display: flex;
+    flex-direction:row;
+}
+
+#specialText {
+    width: 50vw;
+    margin:0;
+    text-align:right;
+    padding: 1%;
+}
+
+#specialImgContainer img {
+    width:50vw;
 }
 
 .content {
     position: relative;
     width:100vw;
+}
+
+#specialImgContainer {
+    max-width:50vw;
+    max-height:50vh;
+    overflow:hidden;
+    margin:0;
+    margin-bottom:2px;
 }
 
 
@@ -158,25 +183,22 @@ footer {
     margin-left:10vw;
 }
 
-/* #specialss {
-    position: absolute;
-    right:0px;
-    top:0;
-    width:50vw;
-    height:100%;
-
-} */
-
-/* .specialImg {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-} */
-
 #menu {
     background-color:var(--curious-blue);
     color: white;
+    padding-bottom:5vh;
 }
+
+#specialImg::after{
+    display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+  /* margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: ''; */
+}
+
 #menuContainer {
     display:flex;
     justify-content: space-around;
@@ -196,6 +218,7 @@ footer {
     border: none;
     position:relative;
     box-shadow: 1px 1px 10px 1px rgba(42, 71, 104, 0.226);
+    font-family: 'Encode Sans', sans-serif;
 }
 
 .imgContainer {
@@ -221,6 +244,7 @@ footer {
     background-color: var(--rodeo-dust);
     color: white;
     padding-bottom: 20px;
+    font-family: 'Encode Sans', sans-serif;
 }
 
 input[type=text]{
@@ -241,11 +265,17 @@ input[type=text]{
     font-family: 'Encode Sans', sans-serif;
     color: var(--temptress);
     font-size: 1em;
-    box-align: center;
+
 }
 
 #street {
     font-weight:bolder;
+    font-size:3em;
+}
+
+
+.hours {
+    font-size: 2em;
 }
 
 #map a {
